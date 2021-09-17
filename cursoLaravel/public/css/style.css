@@ -1,7 +1,62 @@
+/* OPS GERAIS */
 * {
     font-family: 'Roboto';
+    
+}
+
+body {
+    
+    min-height: 100vh;
+    padding-bottom: 100px;
+    position: relative;
+}
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #CCC;
+}
+
+.row {
+    margin: 0;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.btn-primary {
+    background-color: #f2a340;
+    border: 2px solid #C28008;
+}
+
+.btn-primery:hover{
+    background-color: #C28008;
+    border-color: #c28008;
 }
 
 #navbar img {
    width: 90px;
 }
+
+/* Navbar */
+
+#navbar img {
+    width: 400px;
+    padding-block: 4%;
+}
+
+#navbar {
+    justify-content: space-evenly;
+    background-color: #fff;
+    padding: 5px 0;
+}
+
+#navbar a {
+    font-size: 20px;
+    color: #757575;
+}
+#navbar a:hover {
+    color: #f2a340;
+}
+
+/* Search Container */
