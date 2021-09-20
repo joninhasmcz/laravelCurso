@@ -12,8 +12,8 @@
     <!-- CSS BOOTSTRAP -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <!-- CSS da APLICAÇÃO -->
-
     <link rel="stylesheet" href="/css/style.css">
+    
     <script src="/js/scripts.js"></script>
     <!-- <img src="/img/teste.js"></script> -->
 </head>
@@ -42,7 +42,17 @@
             </div>
         </nav>
     </header>
-    @yield('content')
+    <main>
+        <div class="container-fluid">
+            <div class="row">
+                @if(session('msg'))
+                    <p class="msg">{{ session('msg')}}</p>
+                @endif
+
+                @yield('content')
+            </div>
+        </div>
+    </main>
     
     <footer>
         <p>GENESIS COPYRIGHT &copy; 2021</p>
